@@ -28,8 +28,9 @@ float num;
 float result = 0;
 int i;
 
-printf("Once input is done enter =. \n");
+printf("Input '=' to end. \n");
 printf("+: Addition\n -: Subtraction\n *: Multiplication\n /: Division\n");
+printf("Enter number: \n");
 
 for(i = 0; operation != '='; i++)
     {
@@ -39,7 +40,6 @@ for(i = 0; operation != '='; i++)
         }
         if (operation != '=')
         {
-            printf("Enter number: \n");
             scanf("%d", &num);
             getchar();
         }
@@ -72,7 +72,10 @@ for(i = 0; operation != '='; i++)
         divide(&result, num);
         printf("%.2f\n", result);
     }
-
+   else if (operation == '=')
+    {
+    	printf("The total is %.2f.", result);
+	 }
     else
     {
         printf("Input Error!!!");
