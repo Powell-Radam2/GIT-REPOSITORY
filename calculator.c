@@ -23,9 +23,9 @@ void divide (float num1, float num2)
 int main ()
 {
 
-char operation;
+char operation = '+';
 float num;
-float result;
+float result = 0;
 int i;
 
 printf("Once input is done enter =. \n");
@@ -45,7 +45,7 @@ for(i = 0; operation != '='; i++)
         }
         if (i == 0);
         {
-            result = num * 1.0;
+            result * 1.0;
         }
         
 
