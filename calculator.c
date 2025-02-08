@@ -5,7 +5,7 @@ int add(int num1, int  num2)
     return num1 + num2;
 }
 
-int subtract (int num1, int num2)
+float subtract (int num1, int num2)
 {
     return num1 - num2;
 }
@@ -24,8 +24,8 @@ int main ()
 {
 
 int operation;
-int num1, num2;
-int result;
+float num1, num2;
+float result;
 
 printf("Choose operation: \n");
 printf("1: Addition\n 2: Subtraction\n 3: Multiplication\n 4: Division\n");
