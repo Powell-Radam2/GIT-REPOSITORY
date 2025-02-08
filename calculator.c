@@ -1,72 +1,84 @@
 #include <stdio.h>
 
-float add(int num1, int  num2)
+void add(float num1, float num2)
 {
-    return (num1 + num2) * 1.0;
+    num1 += num2;
 }
 
-float subtract (int num1, int num2)
+void subtract (float num1, float num2)
 {
-    return (num1 - num2) * 1.0;
+    num1 -= num2;
 }
 
-float multiply (int num1, int num2)
+void multiply (float num1, float num2)
 {
-    return num1 * 1.0 * num2;
+    num1 *= num2;
 }
 
-float divide (int num1, int num2)
+void divide (float num1, float num2)
 {
-    return num1 * 1.0 / num2;
+    num1 /= num2'
 }
 
 int main ()
 {
 
-int operation;
-float num1, num2;
+char operation;
+float num;
 float result;
 
-printf("Choose operation: \n");
-printf("1: Addition\n 2: Subtraction\n 3: Multiplication\n 4: Division\n");
-scanf("%d", &operation);
+printf("Once input is done enter =. \n");
+printf("+: Addition\n -: Subtraction\n *: Multiplication\n /: Division\n");
 
-printf("Enter first number: \n");
-scanf("%d", &num1);
+for(i = 0; operation != '='; i++)
+    {
+        if (i > 0)
+        {
+            scanf("%c", operation);
+        }
+        if (operation != '=')7
+        {
+            printf("Enter number: \n");
+            scanf("%d", &num);
+            getchar();
+        }
+        if (i == 0);
+        {
+            result = num * 1.0;
+        }
+        
 
-printf("Enter second number: \n");
-scanf("%d", &num2);
+    if (operation == '+')
+    {
+        add(result, num);
+        printf("%.2f\n", result);
+    }
+    
+    else if (operation == '-')
+    {
+        subtract(result, num);
+        printf("%.2f\n", result);
+    }
+    
+    else if (operation == '*')
+    {
+        multiply(num1, num2);
+        printf("%.2f\n", result);
+    }
+    
+    else if (operation == '/')
+    {
+        divide(num1, num2);
+        printf("%.2f\n", result);
+    }
 
-if (operation == 1)
-{
-    result = add(num1, num2);
-    printf("Result: %d", result);
+    else
+    {
+        printf("Input Error!!!")
+        operation = '=';
+    }
+    
 }
 
-if (operation == 2)
-{
-    result = subtract(num1, num2);
-    printf("Result: %d", result);
-}
-
-if (operation == 3)
-{
-    result = multiply(num1, num2);
-    printf("Result: %d", result);
-}
-
-if (operation == 4)
-{
-    result = divide(num1, num2);
-    printf("Result: %d", result);
-}
-
-
-
-
-
-
-
-
-
+return 0
 }
