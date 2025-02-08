@@ -52,29 +52,25 @@ for(i = 0; operation != '='; i++)
     if (operation == '+')
     {
         add(&result, num);
-        printf("%.2f\n", result);
     }
     
     else if (operation == '-')
     {
         subtract(&result, num);
-        printf("%.2f\n", result);
     }
     
     else if (operation == '*')
     {
         multiply(&result, num);
-        printf("%.2f\n", result);
     }
     
     else if (operation == '/')
     {
         divide(&result, num);
-        printf("%.2f\n", result);
     }
    else if (operation == '=')
     {
-    	printf("The total is %.2f.", result);
+    	printf("%.2f.", result);
 	 }
     else
     {
