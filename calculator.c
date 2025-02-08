@@ -35,7 +35,7 @@ for(i = 0; operation != '='; i++)
     {
         if (i > 0)
         {
-            scanf("%c", operation);
+            scanf("%c", &operation);
         }
         if (operation != '=')
         {
