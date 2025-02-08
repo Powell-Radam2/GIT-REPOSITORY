@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int add(int num1, int  num2)
+float add(int num1, int  num2)
 {
     return num1 + num2;
 }
@@ -61,7 +61,7 @@ if (operation == 4)
     printf("Result: %d", result);
 }
 
-printf("Hello World!");
+
 
 
 
