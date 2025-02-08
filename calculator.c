@@ -1,23 +1,23 @@
 #include <stdio.h>
 
-void add(float num1, float num2)
+void add(float *num1, float num2)
 {
-    num1 += num2;
+    *num1 += num2;
 }
 
-void subtract (float num1, float num2)
+void subtract (float *num1, float num2)
 {
-    num1 -= num2;
+    *num1 -= num2;
 }
 
 void multiply (float num1, float num2)
 {
-    num1 *= num2;
+    *num1 *= num2;
 }
 
 void divide (float num1, float num2)
 {
-    num1 /= num2;
+    *num1 /= num2;
 }
 
 int main ()
@@ -51,25 +51,25 @@ for(i = 0; operation != '='; i++)
 
     if (operation == '+')
     {
-        add(result, num);
+        add(&result, num);
         printf("%.2f\n", result);
     }
     
     else if (operation == '-')
     {
-        subtract(result, num);
+        subtract(&result, num);
         printf("%.2f\n", result);
     }
     
     else if (operation == '*')
     {
-        multiply(result, num);
+        multiply(&result, num);
         printf("%.2f\n", result);
     }
     
     else if (operation == '/')
     {
-        divide(result, num);
+        divide(&result, num);
         printf("%.2f\n", result);
     }
 
