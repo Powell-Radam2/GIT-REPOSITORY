@@ -63,23 +63,23 @@ for(i = 0; operation != '='; i++)
     
     else if (operation == '*')
     {
-        multiply(result, num2);
+        multiply(result, num);
         printf("%.2f\n", result);
     }
     
     else if (operation == '/')
     {
-        divide(result, num2);
+        divide(result, num);
         printf("%.2f\n", result);
     }
 
     else
     {
-        printf("Input Error!!!")
+        printf("Input Error!!!");
         operation = '=';
     }
     
 }
 
-return 0
+return 0;
 }
