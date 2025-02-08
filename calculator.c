@@ -2,22 +2,22 @@
 
 float add(int num1, int  num2)
 {
-    return num1 + num2;
+    return (num1 + num2) * 1.0;
 }
 
 float subtract (int num1, int num2)
 {
-    return num1 - num2;
+    return (num1 - num2) * 1.0;
 }
 
-int multiply (int num1, int num2)
+float multiply (int num1, int num2)
 {
-    return num1 * num2;
+    return num1 * 1.0 * num2;
 }
 
 float divide (int num1, int num2)
 {
-    return num1 / num2;
+    return num1 * 1.0 / num2;
 }
 
 int main ()
