@@ -10,12 +10,12 @@ void subtract (float *num1, float num2)
     *num1 -= num2;
 }
 
-void multiply (float num1, float num2)
+void multiply (float *num1, float num2)
 {
     *num1 *= num2;
 }
 
-void divide (float num1, float num2)
+void divide (float *num1, float num2)
 {
     *num1 /= num2;
 }
@@ -40,7 +40,7 @@ for(i = 0; operation != '='; i++)
         }
         if (operation != '=')
         {
-            scanf("%d", &num);
+            scanf("%f", &num);
             getchar();
         }
         if (i == 0);
