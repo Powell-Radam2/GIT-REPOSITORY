@@ -1,68 +1,40 @@
 #include <stdio.h>
-
-int add(int num1, int  num2)
+float calculate (float result, float num2, char operation)
 {
-    return num1 + num2;
-}
+    float result;
+    
+    if (operation == '+');
+        result = num1 + num2;
+    if (operation == '-');
+        result = num1 - num2;
+    if (operation == '*');
+        result = num1 * num2;
+    if (operation == '/');
+        result = num1 / num2;
 
-float subtract (int num1, int num2)
-{
-    return num1 - num2;
-}
-
-int multiply (int num1, int num2)
-{
-    return num1 * num2;
-}
-
-float divide (int num1, int num2)
-{
-    return num1 / num2;
+    return result;
 }
 
 int main ()
 {
 
-int operation;
-float num1, num2;
-float result;
+float result = 0;
+int i;
+char operation = 'a';
+float num2;
 
-printf("Choose operation: \n");
-printf("1: Addition\n 2: Subtraction\n 3: Multiplication\n 4: Division\n");
-scanf("%d", &operation);
-
-printf("Enter first number: \n");
-scanf("%d", &num1);
-
-printf("Enter second number: \n");
-scanf("%d", &num2);
-
-if (operation == 1)
+while (operation != '=');
 {
-    result = add(num1, num2);
-    printf("Result: %d", result);
+    scanf("%d", &result);
+    scanf("%c", &operation);
+    scanf("%d", &num2);
+    result = calculate(result, num2, operation);
 }
 
-if (operation == 2)
-{
-    result = subtract(num1, num2);
-    printf("Result: %d", result);
-}
-
-if (operation == 3)
-{
-    result = multiply(num1, num2);
-    printf("Result: %d", result);
-}
-
-if (operation == 4)
-{
-    result = divide(num1, num2);
-    printf("Result: %d", result);
-}
-
-printf("Hello World!");
-
+printf("%d", result);
+        
+    
+    
 
 
 
