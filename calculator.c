@@ -45,7 +45,7 @@ for(i = 0; operation != '='; i++)
         }
         if (i == 0);
         {
-            result * 1.0;
+            result *= 1.0;
         }
         
 
