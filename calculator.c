@@ -17,7 +17,7 @@ void multiply (float num1, float num2)
 
 void divide (float num1, float num2)
 {
-    num1 /= num2'
+    num1 /= num2;
 }
 
 int main ()
@@ -26,6 +26,7 @@ int main ()
 char operation;
 float num;
 float result;
+int i;
 
 printf("Once input is done enter =. \n");
 printf("+: Addition\n -: Subtraction\n *: Multiplication\n /: Division\n");
@@ -36,7 +37,7 @@ for(i = 0; operation != '='; i++)
         {
             scanf("%c", operation);
         }
-        if (operation != '=')7
+        if (operation != '=')
         {
             printf("Enter number: \n");
             scanf("%d", &num);
@@ -62,13 +63,13 @@ for(i = 0; operation != '='; i++)
     
     else if (operation == '*')
     {
-        multiply(num1, num2);
+        multiply(result, num2);
         printf("%.2f\n", result);
     }
     
     else if (operation == '/')
     {
-        divide(num1, num2);
+        divide(result, num2);
         printf("%.2f\n", result);
     }
 
